@@ -23,27 +23,27 @@
         <form action="https://youtube-api-challenger.appspot.com/member/register" method="post">
             <fieldset>
                 <legend>Thông tin cơ bản</legend>
-                <p>Tên Tài Khoản</p> <input pattern=".{7,}" type="text" name="username"
+                <label for="username">Tên Tài Khoản</label> <input pattern=".{7,}" type="text" name="username" id="username"
                                             oninvalid="this.setCustomValidity('A minimum of 7 Characters requested ')"
                                             placeholder="Tài khoản đăng nhập" required><br>
-                <p>Email</p> <input pattern=".{7,}"
+                <label for="email">Email</label> <input pattern=".{7,}"
                                     oninvalid="this.setCustomValidity('A minimum of 7 Characters requested ')"
-                                    type="email" name="email" placeholder="Email của bạn" required><br>
-                <p>Mật khẩu</p> <input pattern=".{7,}"
+                                    type="email" name="email" placeholder="Email của bạn" id="email" required><br>
+                <label for="pwd">Mật khẩu</label> <input pattern=".{7,}"
                                        oninvalid="this.setCustomValidity('A minimum of 7 Characters requested ')"
-                                       type="password" name="password" placeholder="Mật khẩu đăng nhập" required><br>
-                <p>Xác nhận mật khẩu</p> <input pattern=".{7,}"
+                                       type="password" name="password" id="pwd" placeholder="Mật khẩu đăng nhập" required><br>
+                <label for="rePwd">Xác nhận mật khẩu</label> <input pattern=".{7,}"
                                                 oninvalid="this.setCustomValidity('A minimum of 7 Characters requested ')"
-                                                type="password" name="password" placeholder="Nhập lại mật khẩu"
+                                                type="password" name="rePassword" id="rePwd" placeholder="Nhập lại mật khẩu"
                                                 required><br>
             </fieldset>
             <fieldset>
                 <legend>Thông tin chi tiết</legend>
-                <p>Họ và tên</p> <input type="text" name="fullName" placeholder="Họ và tên của bạn" required><br>
-                <p> Ngày sinh</p> <input type="date" name="birthDay"><br>
-                <p>Giới tính</p> <input type="radio" name="gender" value=1 checked>Nam
+                <label for="fullName">Họ và tên</label> <input type="text" name="fullName" id="fullName" placeholder="Họ và tên của bạn" required><br>
+                <label for="date"> Ngày sinh</label> <input type="date" id="date" name="birthDay"><br>
+                <label for="gender">Giới tính</label> <input type="radio" name="gender" id="gender" value=1 checked>Nam
                 <input type="radio" name="gender" value=0>Nữ<br>
-                <p>Sở thích</p> <input type="checkbox" name="favourite" value="sport">Thể thao <input type="checkbox"
+                <label for="favourite">Sở thích</label> <input type="checkbox" name="favourite" id="favourite" value="sport">Thể thao <input type="checkbox"
                                                                                                       name="hobby2"
                                                                                                       value="movie">
                 Xem phim
@@ -51,8 +51,8 @@
                                                                                              name="hobby4"
                                                                                              value="reading" checked>Đọc
                 sách <br>
-                <p>Ảnh đại diện</p> <input type="file" name="avatar"><br>
-                <p id="special">Giới thiệu về bản thân</p> <textarea>
+                <label for="avatar">Ảnh đại diện</label> <input type="file" id="avatar" name="avatar"><br>
+                <label for="intro" id="special">Giới thiệu về bản thân</label> <textarea id="intro">
 
             </textarea>
             </fieldset>
